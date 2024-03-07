@@ -1,0 +1,70 @@
+@import "/src/Common/common.scss";
+
+.schedual {
+  margin-top: resize(48);
+}
+
+.schedualTitle {
+  font-size: resize(36);
+  font-family: ProductSansBlack;
+  font-weight: 900;
+  color: #202020;
+}
+
+.inSchedual {
+  margin-top: resize(24);
+  display: flex;
+
+  .progress {
+    margin-top: 12px;
+    .circle {
+      width: resize(12);
+      height: resize(12);
+      border-radius: 50%;
+      background: #90949a;
+    }
+    .line {
+      width: 1px;
+      margin-left: resize(5.5);
+      background: #e19048;
+      height: calc(100% - resize(12) + resize(24) + resize(13));
+    }
+  }
+
+  .schedualIntro {
+    margin-left: resize(8);
+    .sTitle {
+      font-size: resize(24);
+      font-family: ProductSansBold;
+      color: #202020;
+      font-weight: 700;
+    }
+    .endSechedual {
+      margin-left: resize(12);
+      padding: resize(8) resize(16);
+      border-radius: resize(8);
+      background: #90949a;
+      font-family: ProductSansBold;
+      color: #fff;
+      font-weight: 700;
+      text-align: center;
+    }
+    .sechedualing {
+      margin-left: resize(12);
+      padding: resize(8) resize(16);
+      border-radius: resize(8);
+      background: #ffdcc3;
+      font-family: ProductSansBold;
+      color: #ef8339;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+  .schedualDesc {
+    margin-top: resize(10);
+    font-size: resize(18);
+    font-family: ProductSansRegular;
+    color: #90949a;
+  }
+}

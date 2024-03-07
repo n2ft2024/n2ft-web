@@ -1,0 +1,26 @@
+.mobileinput{
+    display: none;
+    @media (max-width: 768px) {
+        display: block;
+        height: 48px;
+        background: #F4F7F9;
+        display: flex;
+        padding-left: 35px;
+    }
+}
+.mobilesearchbox{
+    @media (max-width: 768px) {
+     display: flex;
+     position: relative;
+    } 
+}
+.mobilesearchIcon{
+    @media (max-width: 768px) {
+        position: absolute;
+        top: 14px;
+        left: 10px;
+        width: 16px;
+        height: 16px;
+        z-index: 10;
+       }  
+}

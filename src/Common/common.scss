@@ -1,0 +1,34 @@
+
+$vm_base: 1920;
+$vm_mobile_base: 375;
+$web_content:1300px;
+$mobile_content:90%;
+
+@function vw($px) {
+  @return ($px / $vm_base) * 100vw;
+}
+@function vwm($px) {
+  @return ($px / $vm_mobile_base) * 100vw;
+}
+
+@function rem($px) {
+  @return ($px / 100) + rem;
+}
+
+@function resize($px) {
+  @return ($px*1800/1920) + px;
+}
+
+$header_height:resize(96);
+$header_height_mobile:48px;
+
+.flexView {
+  display: flex;
+  align-items: center;
+}
+
+.flexViewCol {
+  display: flex;
+  flex-direction: column;
+}
+

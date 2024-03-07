@@ -1,0 +1,36 @@
+@import 'src/Common/common.scss';
+
+.ant-drawer-mask{
+    // display: none !important;
+
+}
+.ant-drawer-content-wrapper{
+    margin-top: 90px;
+    width: 34%;
+    @media screen and (max-width: 768px) {
+        width: 50%;
+    }
+}
+.ant-drawer-close{
+   position: absolute;
+   right: 0;
+   font-size: resize(24) !important;
+   color: #000000 !important;
+   @media screen and (max-width: 768px) {
+    width: 20px;
+    height: 20px;
+    font-size: 20px  !important;
+    position: absolute;
+    right: 20px;
+   }
+}
+.ant-drawer-header{
+    border-bottom: none !important;
+}
+
+.ant-drawer-body{
+    padding:0 !important;
+}
+.ant-drawer-right{
+    z-index: 995;
+}

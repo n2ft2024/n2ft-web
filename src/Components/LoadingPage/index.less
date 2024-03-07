@@ -1,0 +1,28 @@
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.loadingView{
+    // background-color: red;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 768px) {
+  
+    };
+  }
+  .loadingIcon {
+    width: 10rem;
+    height:10rem;
+    animation: rotate 1s linear infinite;
+    @media (max-width: 768px) {
+      width: 7rem;
+      height:7rem;
+    };
+  }

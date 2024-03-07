@@ -1,0 +1,433 @@
+@import 'src/Common/common.scss';
+
+.shoppingcart {
+    display: flex;
+    flex-direction: column;
+    padding: resize(24);
+
+    @media (max-width: 768px) {
+        padding: 0px 20px 20px 20px;
+
+    }
+}
+
+.shopbox {
+    display: flex;
+
+}
+
+.shopItems {
+    padding: resize(24);
+    border-bottom: 1px solid #E5E5E5;
+
+    @media (max-width: 768px) {
+        padding: 0;
+        padding-bottom: 17px;
+        border-bottom: 1px solid #E5E5E5;
+    }
+}
+
+.linearbox {
+    display: flex;
+    align-items: center;
+}
+
+.linear {
+
+    width: resize(20);
+    height: resize(20);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (max-width: 768px) {
+        width: 16px;
+        height: 16px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.shopcont {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: resize(8);
+
+    @media (max-width: 768px) {
+        margin-left: 8px;
+    }
+}
+
+.shopbot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: resize(5);
+
+
+}
+
+.shoptext {
+    display: flex;
+    justify-content: space-between;
+    margin-top: resize(5);
+}
+
+.shopname {
+    font-size: resize(20);
+    font-weight: 500;
+    font-family: ProductSansMedium;
+    color: #000000;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+
+    }
+}
+
+.shopcucybox {
+    display: flex;
+}
+
+.currency {
+    width: resize(14);
+    height: resize(14);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    width:6px;
+    height:11px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.curreyvalue {
+    font-weight: 500;
+    font-size: resize(20);
+    color: #000000;
+    font-family: ProductSansMedium;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+
+    }
+}
+
+.shopImg {
+    margin-left: resize(12);
+    width: resize(64);
+    height: resize(64);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (max-width: 768px) {
+        margin-left: 8px;
+        width: 40px;
+        height: 40px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.shopconttext {
+    font-weight: 500;
+    font-size: resize(16);
+    color: #90949A;
+    font-family: ProductSansMedium;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+
+    }
+}
+
+.shopmoney {
+    font-weight: 500;
+    font-size: resize(16);
+    color: #90949A;
+    font-family: ProductSansMedium;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+.pricetotal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: resize(8);
+}
+
+.pricetitle {
+    font-size: resize(16);
+    font-family: ProductSansBlack;
+    color: #202020;
+    font-weight: 900;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.balance {
+    margin-top: resize(36);
+}
+
+.balancetitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricecont {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricetop {
+    display: flex;
+}
+
+.priceImg {
+    width: resize(24);
+    height: resize(24);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    @media (max-width: 768px) {
+        width: 24px;
+        height:24px;
+    
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.pricenumber {
+    font-weight: 400;
+    font-size: resize(14);
+    font-family: ProductSansMedium;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.pricebot {
+    display: flex;
+    justify-content: end;
+    font-weight: 400;
+    font-size: resize(12);
+    font-family: ProductSansMedium;
+    color: #90949A;
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+
+.account {
+    font-weight: 900;
+    font-size: resize(16);
+    font-family: ProductSansBlack;
+    color: #000000;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.accountvalue {
+    font-weight: 900;
+    font-size: resize(14);
+    font-family: ProductSansBlack;
+    color: #000000;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.balancecont {
+    margin-top: resize(12);
+    padding: resize(16);
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #E5E5E5;
+    border-radius: resize(12);
+}
+
+.balanceleft {
+    display: flex;
+}
+
+.balanceImg {
+    width: resize(32);
+    height: resize(32);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    @media (max-width: 768px) {
+        width: 32px;
+        height: 32px;
+    
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.balancetext {
+    margin-left: resize(8);
+}
+
+.balancename {
+    color: #90949A;
+    font-weight: 500;
+    font-size: resize(18);
+    font-family: ProductSansMedium;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.balancecount {
+    color: #90949A;
+    font-weight: 500;
+    font-size: resize(16);
+    font-family: ProductSansMedium;
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+.amounts {
+    color: #90949A;
+    font-weight: 900;
+    font-size: resize(21);
+    font-family: ProductSansBlack;
+    display: flex;
+    align-items: center;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.payment {
+    margin-top: resize(48);
+}
+
+.paymenttitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paymentname {
+    font-weight: 900;
+    font-size: resize(18);
+    font-family: ProductSansBlack;
+    color: #000000;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+
+}
+
+.paymenttop {
+    display: flex;
+}
+
+.paymentImg {
+    width: resize(24);
+    height: resize(24);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    @media (max-width: 768px) {
+        width: 24px;
+        height: 24px;
+    
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.paymentdata {
+    font-size: resize(16);
+    font-weight: 500;
+    color: #000000;
+    font-family: ProductSansMedium;
+    display: flex;
+    align-items: center;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.paymentbot {
+    font-size: resize(14);
+    font-weight: 500;
+    color: #90949A;
+    font-family: ProductSansMedium;
+    display: flex;
+    justify-content: right;
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+.paymenbutton {
+    padding: resize(16) resize(20);
+    background: #EF8339;
+    color: #FFFFFF;
+    font-size: resize(20);
+    font-weight: 500;
+    font-family: ProductSansMedium;
+    margin-top: resize(15);
+    border-radius: resize(12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.nodata {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #90949A;
+    font-size: resize(18);
+    font-weight: 400;
+    font-family: ProductSans;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}

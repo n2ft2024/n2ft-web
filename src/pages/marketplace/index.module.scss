@@ -1,0 +1,11 @@
+@import 'src/Common/common.scss';
+.marketplace{
+    width: 90%;
+    margin: auto;
+}
+.marketbox{
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: resize(24);
+}

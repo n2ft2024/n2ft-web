@@ -1,0 +1,118 @@
+@import 'src/Common/common.scss';
+
+.tradingNoda {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: resize(48);
+    text-align: center;
+}
+
+.tradingImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nodata {
+    width: resize(300);
+    height: resize(300);
+}
+
+.notext {
+    color: var(--Gray-Tips, #90949A);
+    text-align: center;
+    font-family: ProductSans;
+    font-size: resize(18);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+.notbtnbox {
+    border-radius: resize(12);
+    background: var(--Primary-Orange, #EF8339);
+    padding: resize(16) 0;
+    margin-top: resize(48);
+}
+
+.notbtn {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: ProductSansMedium;
+    font-size: resize(20);
+    font-style: normal;
+    font-weight: 500;
+    line-height: resize(30);
+    cursor: pointer;
+}
+
+
+.relBtn {
+    margin-top: resize(36);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: resize(36);
+
+    @media (max-width: 768px) {
+        margin-top: 63px;
+        margin-bottom: 38px;
+    }
+}
+
+.trading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+
+    border-radius: resize(12);
+    color: #FFFFFF;
+    // padding: resize(16) resize(81);
+    line-height: resize(30);
+    cursor: pointer;
+    width: resize(220);
+    height: resize(62);
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+        margin-top: 20px;
+        width: resize(148);
+        height: resize(48);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1300px) {
+        width: resize(128);
+        height: resize(48);
+    }
+}
+.tradingTrans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#E5E5E5;
+    border-radius: resize(12);
+    color: #FFFFFF;
+    // padding: resize(16) resize(81);
+    line-height: resize(30);
+    cursor: pointer;
+    width: resize(220);
+    height: resize(62);
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+        margin-top: 20px;
+        width: resize(148);
+        height: resize(48);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1300px) {
+        width: resize(128);
+        height: resize(48);
+    }
+}
+.trading:hover{
+    color: #000000;
+    background:#FFFFFF;
+    border: 1px solid #000000;
+}

@@ -1,0 +1,301 @@
+@import '/src/Common/common.scss';
+
+.wallet {
+    padding: 24px;
+    @media (max-width: 768px) {
+        padding: 24px 0 0 0;
+        
+    }
+}
+
+.walletInfomation {
+    display: flex;
+}
+
+.walletleft {
+    width: 45%;
+
+}
+
+.walletItem {
+    display: flex;
+    cursor: pointer;
+
+}
+
+.walletItem:not(:first-child) {
+    margin-top: resize(36);
+}
+
+.icon {
+    width: resize(24);
+    height: resize(24);
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (max-width: 768px) {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.walletname {
+    font-family: ProductSansMedium;
+    font-size: resize(18);
+    font-weight: 500;
+    margin-left: resize(18);
+    display: flex;
+    align-items: center;
+    color: #000000;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+        margin-left: 8px;
+    }
+}
+
+.walletright {
+    // margin-left: resize(36);
+    width: 45%;
+
+    @media (max-width: 768px) {
+        width: auto;
+        margin-left: 0;
+    }
+}
+
+.balance {
+    margin-top: resize(48);
+ 
+}
+
+.balancetitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.balancename {
+    font-family: ProductSansBlack;
+    font-size: resize(18);
+    font-weight: 900;
+    color: #000000;
+}
+
+.balancevalue {
+    font-family: ProductSansBlack;
+    font-size: resize(21);
+    font-weight: 900;
+    color: #000000;
+}
+
+.balanceItem {
+    border: 1px solid #E5E5E5;
+    padding: resize(16);
+    display: flex;
+    justify-content: space-between;
+    border-radius: resize(12);
+    margin-top: resize(12);
+}
+
+.balanceItemleft {
+    display: flex;
+}
+
+.balanceImg {
+    width: resize(32);
+    height: resize(32);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.balanceItemtext {
+    display: flex;
+    flex-direction: column;
+    margin-left: resize(8);
+}
+
+.balanceItemtitle {
+    font-family: ProductSansMedium;
+    font-size: resize(18);
+    font-weight: 500;
+    color: #000000;
+}
+
+.balanceItembot {
+    font-family: ProductSansMedium;
+    font-size: resize(16);
+    font-weight: 500;
+    color: #90949A;
+}
+
+.balanceItemright {
+    font-size: resize(21);
+    font-weight: 900;
+    color: #000000;
+    font-family: ProductSansBlack;
+    display: flex;
+    align-items: center;
+}
+
+.award {
+    margin-top: resize(48);
+    @media (max-width: 768px) {
+    margin-top: 0;
+    border-top: 1px solid #E5E5E5;
+    padding: 20px  0 0 0;
+    margin-top: 24px;
+    border-bottom: 1px solid #E5E5E5;
+    }
+}
+
+.awardtitle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: resize(48);
+    @media (max-width: 768px) {
+    padding-bottom: 16px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+}
+
+.awardname {
+    font-size: resize(18);
+    font-weight: 900;
+    color: #000000;
+    font-family: ProductSansBlack;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.awardbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    // margin-top: resize(48);
+    @media (max-width: 768px) {
+        margin-top: 16px;
+    }
+}
+
+.awardlist {
+    font-size: resize(21);
+    font-weight: 900;
+    color: #000000;
+    font-family: ProductSansBlack;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+
+    @media (max-width: 768px) {
+        margin-top: 0;
+        border-top: 1px solid #E5E5E5;
+        padding-top: 16px;
+    }
+}
+
+.member {
+    font-size: resize(16);
+    font-weight: 900;
+    color: #202020;
+    font-family: ProductSansBlack;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.membertext {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.memberright {
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+    align-items: center;
+    @media (max-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.membervalue {
+    color: #202020;
+    font-weight: 900;
+    font-family: ProductSansBlack;
+    font-size: resize(21);
+    justify-content: end;
+    display: flex;
+    // margin-top: resize(4);
+    margin-left: resize(10);
+    @media (max-width: 768px) {
+        font-size: 12px;
+        margin-left: 5px
+    }
+}
+
+.search {
+    font-size: resize(16);
+    font-weight: 400;
+    color: #90949A;
+    font-family: ProductSans;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.right {
+    width: resize(20);
+    height: resize(20);
+    margin-left: resize(8);
+    display: flex;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (max-width: 768px) {
+        width: 16px;
+        height: 16px;
+        display: flex;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

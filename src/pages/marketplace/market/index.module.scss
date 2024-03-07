@@ -1,0 +1,287 @@
+@import '../../../Common/common.scss';
+
+.market {
+    border: 1.5px solid #F5F5F5;
+    border-radius: resize(16);
+    cursor: pointer;
+    max-width: resize(240);
+    overflow: hidden;
+    width: 100%;
+    @media (max-width: 768px) {
+      border-radius: 8px;
+      width: 100%;
+    };
+}
+
+.market:hover .footer {
+    display: none;
+}
+
+.market:hover .buy {
+    display: block;
+    height: resize(60);
+    display: flex;
+    justify-content: space-between;
+    background: #EF8339;
+    border-bottom-right-radius: resize(16);
+    border-bottom-left-radius: resize(16);
+    @media (max-width: 768px) {
+      height:44px;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+}
+
+
+.marketImg {
+  width: 100%;
+  height: auto;
+  position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+}
+
+.cont {
+    padding: resize(18) resize(16);
+    @media (max-width: 768px) {
+      padding:8px
+    }
+}
+
+.marketdesc {
+    font-family: ProductSans;
+    color: #000000;
+    font-weight: 400;
+    font-size: resize(16);
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+}
+
+.markettitle {
+    color: #000000;
+    font-weight: 500;
+    font-size: resize(21);
+    font-family: ProductSansMedium;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+}
+
+.marketdetail {
+    display: flex;
+    justify-content: space-between;
+    margin-top: resize(13);
+    @media (max-width: 768px) {
+      margin-top:6px
+    }
+}
+
+.detalleft {
+    display: flex;
+}
+
+.markeright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.detailImg {
+    width: resize(24);
+    height: resize(24);
+
+    img {
+        width: 100%;
+        height: 100%;
+    };
+    @media (max-width: 768px) {
+      width: 12px;
+      height: 12px;
+    }
+}
+
+.detailvalue {
+    margin-left: resize(6);
+    font-size: resize(18);
+    font-weight: 900;
+    font-family: ProductSansBlack;
+    color: #EF8339;
+    display: flex;
+    align-items: center;
+    @media (max-width: 768px) {
+      margin-left: 4px;
+      font-size: 14px
+    }
+}
+
+.marketdetailtext {
+    font-size: resize(16);
+    font-weight: 400;
+    font-family: ProductSans;
+    color: #90949A;
+    display: flex;
+    align-items: center;
+    @media (max-width: 768px) {
+      font-size: 12px
+    };
+}
+
+
+.detailrightIcon {
+    width: resize(20);
+    height: resize(20);
+    @media (max-width: 768px) {
+      width:12px;
+      height: 12px;
+    };
+}
+
+.footer {
+    border-top: 1px solid #F5F5F5;
+    padding: 0 resize(16);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: resize(60);
+    line-height: resize(60);
+    @media (max-width: 768px) {
+      padding: 0 8px;
+      height: 44px;
+      line-height: 44px;
+    }
+}
+
+.timer {
+    font-size: resize(16);
+    font-weight: 400;
+    font-family: ProductSans;
+    color: #90949A;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+}
+
+.footerright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footerIcon {
+    width: resize(24);
+    height: resize(24);
+    @media (max-width: 768px) {
+      width:16px;
+      height:16px;
+    }
+}
+
+.footervalue {
+    margin-left: resie(6);
+    font-size: resize(18);
+    font-weight: 900;
+    font-family: ProductSansBlack;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    @media (max-width: 768px) {
+      margin-left: 4px;
+      font-size: 16px;
+    }
+}
+
+.buy {
+    display: none;
+}
+
+.butbtn {
+    padding: resize(16) resize(12);
+    color: #FFFFFF;
+    font-size: resize(24);
+    font-family: ProductSansMedium;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    @media (max-width: 768px) {
+      padding: 8px 6px;
+      font-size: 16px
+    }
+}
+
+.ellipsis {
+    border-left: 1px solid #B96023;
+    padding: resize(14) resize(15);
+    position: relative;
+    @media (max-width: 768px) {
+      padding: 8px;
+    }
+}
+
+.ellipsisImg {
+    width: resize(30);
+    height: resize(30);
+    @media (max-width: 768px) {
+      width:30px;
+      height: 30px;
+    }
+}
+
+.markettops {
+    display: none;
+
+}
+
+.ellipsis:hover .markettops {
+    display: flex;
+    position: absolute;
+    bottom: resize(60);
+    right: 0;
+    background: #FFFFFF;
+    border-radius: resize(12) 0px 0px resize(12);
+    padding: resize(24) resize(18);
+    flex-direction: column;
+    width: resize(184);
+    @media (max-width: 768px) {
+      bottom:44px;
+      border-radius:6px 0px 0px 6px;
+      padding: 12px 9px;
+      width: 140px
+    }
+}
+
+.marketItem {
+    color: #000000;
+    font-family: ProductSans;
+    font-size: resize(20);
+    font-weight: 400;
+    padding: resize(8);
+    border-radius: resize(8);
+    @media (max-width: 768px) {
+      font-size: 12px;
+      padding: 4px;
+      border-radius: 2px;
+    }
+}
+
+.marketItem:not(:first-child) {
+    margin-top: resize(36);
+    @media (max-width: 768px) {
+      margin-top: 10px;
+    }
+}
+
+.marketItem:hover{
+    background: #EF8339;
+    color: #FFFFFF;
+}
+.defaultNFT {
+  width: 100%;
+  height: 100%;
+  // position: absolute;
+  height: auto;
+}

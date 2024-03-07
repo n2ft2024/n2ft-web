@@ -1,0 +1,128 @@
+@import 'src/Common/common.scss';
+
+.bg {
+    background: #fff;
+    padding: resize(36);
+    width: resize(552);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: resize(24);
+
+    @media screen and (max-width:768px) {
+        width: 100%;
+        padding: 24px 16px;
+        border-radius: 16px 16px 0px 0px;
+        margin: 0 15px;
+    }
+}
+
+.close {
+    width: resize(28);
+    height: resize(28);
+    position: relative;
+    cursor: pointer;
+    top: -5px;
+    right: 1px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (max-width:768px) {
+        width: 20px;
+        height: 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.title {
+    color: #202020;
+    font-family: ProductSansMedium;
+    font-size: resize(24);
+    font-weight: 500;
+
+    @media screen and (max-width:768px) {
+        font-size: 20px
+    }
+}
+
+.cont {
+    margin-top: resize(36);
+    padding: resize(18);
+    background: #F4F7F9;
+    border-radius: resize(12);
+    width: 100%;
+
+    @media screen and (max-width:768px) {
+        padding: 12px;
+        border-radius: 8px;
+        margin-top: 24px;
+
+    }
+}
+
+.item {
+    color: #202020;
+    font-family: ProductSansMedium;
+    font-size: resize(21);
+    font-weight: 500;
+    margin-top: resize(16);
+
+    @media screen and (max-width:768px) {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}
+.introduce {
+    margin-top: resize(36);
+    padding: resize(18);
+    background: #F4F7F9;
+    border-radius: resize(8);
+    width: 100%;
+
+    @media screen and (max-width:768px) {
+        padding: 12px;
+        border-radius: 8px;
+        margin-top: 16px;
+
+    }
+
+}
+
+.intItem {
+    color: #EF8339;
+    font-family: ProductSansMedium;
+    font-size: resize(16);
+    font-weight: 500;
+    @media screen and (max-width:768px) {
+        font-size:  12px;
+        font-weight: 400;
+        margin-top: 8px;
+    }
+}
+
+
+.cruelsale {
+    background: #EF8339;
+    border-radius: resize(12);
+    font-family: ProductSansMedium;
+    font-size: resize(20);
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: resize(16) resize(81);
+    margin-top: resize(36);
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width:768px) {
+        margin-top: 24px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,324 @@
+@import 'src/Common/common.scss';
+
+.resaleItem {
+    @media screen and (max-width:768px) {
+        border: 1px solid #F5F5F5;
+        padding: 16px 12px;
+        border-radius: 8px;
+    }
+}
+
+.title {
+    margin-top: resize(49);
+    padding-bottom: resize(36);
+    border-bottom: 1px solid #E5E5E5;
+
+    @media screen and (max-width:768px) {
+        margin-top: 0;
+        padding-bottom: 8
+    }
+}
+
+.top {
+    font-size: resize(28);
+    font-weight: 500;
+    color: #000000;
+    font-family: ProductSansMedium;
+    @media screen and (max-width:768px) {
+        font-size: 16px;
+    }
+}
+
+.titlecont {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 24px;
+    margin-top: resize(36);
+    align-items: center;
+
+    @media screen and (max-width:768px) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 19px;
+    }
+}
+
+.info {
+    display: flex;
+}
+
+.infoImg {
+    width: resize(64);
+    height: resize(64);
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: resize(8);
+    }
+}
+
+.infocolum {
+    display: flex;
+    flex-direction: column;
+    margin-left: resize(12);
+    justify-content: space-evenly;
+
+    @media screen and (max-width:768px) {
+        margin-left: 12px;
+    }
+}
+
+.infoname {
+    font-size: resize(16);
+    font-weight: 400;
+    color: #3F3E3D;
+    font-family: ProductSans;
+
+    @media screen and (max-width:768px) {
+        font-size: 12px;
+    }
+}
+
+.infonumber {
+    font-size: resize(20);
+    font-weight: 500;
+    color: #000000;
+    font-family: ProductSansMedium;
+
+    @media screen and (max-width:768px) {
+        font-size: 14px;
+    }
+}
+
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width:768px) {
+        display: none;
+    }
+}
+
+.checkIcon {
+    width: resize(18);
+    height: resize(18);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.checktext {
+    font-size: resize(18);
+    font-weight: 400;
+    color: #000000;
+    font-family: ProductSans;
+    margin-left: resize(3);
+}
+
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width:768px) {
+        display: none;
+    }
+}
+
+.timerIcon {
+    width: resize(18);
+    height: resize(18);
+    display: flex;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.timertext {
+    display: flex;
+    font-size: resize(18);
+    font-weight: 400;
+    color: #000000;
+    font-family: ProductSans;
+    margin-left: resize(3);
+    align-items: center;
+
+}
+
+
+
+.statuspending {
+    font-size: resize(18);
+    font-weight: 500;
+    color: #EF8339;
+    font-family: ProductSansMedium;
+    display: flex;
+    justify-content: end;
+    @media screen and (max-width:768px) {
+        font-size: 14px;
+    }
+}
+
+.statusfinish {
+    font-size: resize(18);
+    font-weight: 500;
+    color: #26A17B;
+    font-family: ProductSansMedium;
+    display: flex;
+    justify-content: end;
+    @media screen and (max-width:768px) {
+        font-size: 14px;
+    }
+}
+
+.statusextract {
+    font-size: resize(18);
+    font-weight: 500;
+    color: #90949A;
+    font-family: ProductSansMedium;
+    display: flex;
+    justify-content: end;
+}
+
+.ItemTable {
+    margin-top: resize(36);
+
+    :global {
+        .ant-table-thead>tr>th {
+            background: #F4F7F9 !important;
+            border-bottom: none;
+        }
+
+        .ant-table-thead .ant-table-cell {
+            background: #F4F7F9 !important;
+            border-bottom: none !important;
+            color: #202020 !important;
+            font-family: ProductSans !important;
+            font-size: resize(18) !important;
+            font-weight: 400 !important;
+            padding: resize(12) resize(18);
+        }
+
+        .ant-table-thead>tr>th::before {
+            background-color: #F4F7F9 !important;
+            content: '';
+        }
+        .ant-table-thead .ant-table-cell:first-child {
+            border-start-start-radius: resize(12);
+            border-bottom-left-radius: resize(12);
+        }
+
+        .ant-table-thead .ant-table-cell:last-child {
+            border-start-end-radius: resize(12);
+            border-bottom-right-radius: resize(12);
+        }
+        .ant-table-cell-row-hover{
+            background: none !important;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        margin-top: 16px;
+        :global {
+            .ant-table-thead>tr>th {
+                background: #F4F7F9 !important;
+                border-bottom: none;
+            }
+
+            .ant-table-thead .ant-table-cell {
+                background: #F4F7F9 !important;
+                border-bottom: none !important;
+                color: #202020 !important;
+                font-family: ProductSans !important;
+                font-size: 12px !important;
+                font-weight: 400 !important;
+                padding: 13px 9px;
+            }
+
+            .ant-table-thead>tr>th::before {
+                background-color: #F4F7F9 !important;
+                content: '';
+            }
+        }
+    }
+}
+
+.mobilecont {
+    display: none;
+
+    @media screen and (max-width:768px) {
+        display: flex;
+        margin-top: 8px;
+    }
+}
+
+.mobilecheck {
+    @media screen and (max-width:768px) {
+        display: flex;
+    }
+}
+
+.mobilecheckIcon {
+    @media screen and (max-width:768px) {
+        display: flex;
+
+        width: 12px;
+        height: 12px;
+    
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
+
+.mobilechecktext {
+    @media screen and (max-width:768px) {
+        font-size: 12px;
+        font-weight: 400;
+        color: #000000;
+        font-family: ProductSans;
+        margin-left:4px;
+    }
+}
+
+.mobiletimer {
+    @media screen and (max-width:768px) {
+        display: flex;
+        margin-left: 16px;
+    }
+
+}
+
+.mobiletimerIcon {
+    @media screen and (max-width:768px) {
+        width:12px;
+        height:12px;
+        display: flex;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
+
+.mobiletimertext {
+    @media screen and (max-width:768px) {
+        display: flex;
+        font-size:12px;
+        font-weight: 400;
+        color: #000000;
+        font-family: ProductSans;
+        margin-left: 4px;
+        align-items: center;
+    }
+
+}

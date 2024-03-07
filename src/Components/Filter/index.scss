@@ -1,0 +1,88 @@
+@import '../../Common/common.scss';
+
+.ant-select-selector {
+    border: 1px solid #EF8339 !important;
+
+    padding: resize(12) !important;
+}
+
+
+.ant-select-selection-item {
+    font-size: resize(18);
+    font-weight: 400;
+    color: #000000;
+    font-family: ProductSans;
+}
+
+.ant-select-dropdown {
+    border: 1px solid #EF8339;
+    padding: resize(16);
+}
+
+.ant-select-item-option-content {
+    border: 1px solid #F5F5F5;
+    border-radius: resize(6);
+    padding: resize(12);
+}
+
+.ant-select-item-option-selected {
+    background-color: #EF8339 !important;
+    color: #FFFFFF;
+}
+
+.ant-select-item {
+    padding: 0 !important;
+    margin-top: resize(12);
+}
+
+.ant-select-item:hover {
+    background-color: #EF8339 !important;
+    border: 1px solid #F5F5F5;
+    color: #FFFFFF;
+
+}
+
+.ant-select-item:hover .ant-select-item-option-content {
+    border: none;
+}
+
+.ant-select-item-option-active {
+    border: none !important;
+}
+
+
+.ant-select-item-option-active .ant-select-item-option-content {
+    border: none !important;
+}
+
+.ant-select-item-option-selected .ant-select-item-option-content {
+    border: none !important;
+    color: #FFFFFF;
+}
+
+.ant-radio-checked .ant-radio-inner {
+    background-color: #EF8339 !important;
+    border-color: #EF8339 !important;
+    border-color: #90949A;
+
+}
+
+.ant-radio .ant-radio-wrapper {
+    background: #EF8339 !important;
+}
+
+.ant-radio-inner:focus-visible {
+    border-color: #EF8339 !important;
+    background: #EF8339 !important;
+
+}
+
+.ant-radio:hover .ant-radio-inner {
+    border-color: #EF8339 !important;
+
+}
+
+.ant-radio-wrapper:focus-within .ant-radio .ant-radio-inner {
+    border-color: #EF8339 !important;
+
+}

@@ -1,0 +1,47 @@
+import { ChainID } from './chains';
+
+export interface AddressMap {
+  [cid:number]:`0x${string}` | string
+}
+
+export const USDT_ADDRESSSES:AddressMap = {
+  [ChainID.BSC]: "0x55d398326f99059fF775485246999027B3197955",
+};
+
+export const N2NFT_ADDRESSSES:AddressMap = {
+  [ChainID.BSC]: "0x1C0e4474668Ae119F2A5A33A6265C081f97496e8",
+};
+
+export const N2Relation_ADDRESSSES:AddressMap = {
+  // [ChainID.BSC]: "0x257b546120Cd388879C3e43136512541A0cEb741",
+  [ChainID.BSC]: "0xe38853E29b3CBEAc44Ffa16A487A5031665B8659",
+
+};
+
+export const GNFT_ADDRESSSES:AddressMap = {
+  // [ChainID.BSC]: "0x290Cc89d99c5686A53fFd51b65742a8143F49dD3",
+  [ChainID.BSC]: "0x1C0e4474668Ae119F2A5A33A6265C081f97496e8",
+};
+
+export const GMINT_ADDRESSSES:AddressMap = {
+  // [ChainID.BSC]: "0x729aA0337e608Be99E25E5F77F281E82bB80E7eF",
+  [ChainID.BSC]: "0x44D4D2C7522Ee6E3F58d4a92658Dcc5Ddd72DdD2",
+
+};
+
+
+export const N2NPOOL_ADDRESSSES:AddressMap = {
+  // [ChainID.BSC]: "0xed9523a7D659d781D6bAD46b7639Cc79C0f8FEEE",
+  [ChainID.BSC]: "0x89EFEddC20cFB57270561646eED54BE79903c456",
+
+};
+
+export const N2SWAP_ADDRESSSES:AddressMap = {
+  // [ChainID.BSC]: "0x8E2E7a18f1537573Df5f276e52eF2f055B39Ff5E",
+  [ChainID.BSC]: "0x904AF34F01D3bA83923557A453615EFa1CBD06Ca",
+};
+
+export const N2SwapMerkle_ADDRESSSES:AddressMap = {
+  // [ChainID.BSC]: "0x8E2E7a18f1537573Df5f276e52eF2f055B39Ff5E",
+  [ChainID.BSC]: "0xf86bE1153C0AE067DE44caA973997F6aa4b88029",
+};

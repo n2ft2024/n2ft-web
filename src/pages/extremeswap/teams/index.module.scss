@@ -1,0 +1,232 @@
+@import 'src/Common/common.scss';
+
+.avatar {
+  width: resize(108);
+  height: resize(108);
+  margin-right: resize(24);
+  @media (max-width: 768px) {
+    width:44px;
+    height: 44px;
+    margin-right: 12px;
+  }
+}
+.account {
+  color: #3F3E3D;
+  font-family: ProductSansMedium;
+  font-size: resize(16);
+  font-weight: 500;
+  margin-right: resize(12);
+  @media (max-width: 768px) {
+    font-size: 14px;
+    margin-right: 12px;
+    margin-top: 8px;
+  }
+}
+.accountID {
+  color: #000;
+  font-family: ProductSansBlack;
+  font-size: resize(32);
+  font-weight: 900;
+  margin-bottom: resize(6);
+  @media (max-width: 768px) {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0px;
+  }
+}
+.level {
+  color: #EF8339;
+  font-family: ProductSansMedium;
+  font-size: resize(16);
+  font-weight: 500;
+  margin-top: resize(6);
+  @media (max-width: 768px) {
+    font-size: 14px;
+    margin-top: 0;
+    margin-left: 12px;
+  };
+}
+.shareImage {
+  width: resize(30);
+  height: resize(30);
+  cursor: pointer;
+  @media (max-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background: var(--gray-bg-4, #E5E5E5);
+  margin: resize(36) 0;
+  @media (max-width: 768px) {
+    margin: 16px 0;
+  }
+}
+.downView {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.rewardInfo {
+  border-radius: resize(12);
+  border: 1px solid var(--gray-bg-4, #E5E5E5);
+  padding: resize(24) resize(18);
+  width: 100%;
+  border-radius: resize(24);
+  // height: resize(630);
+  @media (max-width: 768px) {
+    border-radius: 16px;
+    padding: 16px 12px;
+    border-radius: 16px;
+    height:fit-content
+  }
+}
+.teamInfo {
+  margin-left: resize(36);
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+}
+.downTitle {
+  color: #000;
+  font-family: ProductSansMedium;
+  font-size: resize(27);
+  font-weight: 500;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+.downLine {
+  width: 100%;
+  height: 1px;
+  background: var(--gray-bg-4, #E5E5E5);
+  margin: resize(24) 0;
+  @media (max-width: 768px) {
+    margin: 16px 0;
+  }
+}
+.downdes {
+  color: #202020;
+  font-family: ProductSansMedium;
+  font-size: resize(21);
+  @media (max-width: 768px) {
+    font-size: 14px;
+  };
+  max-width: 60%;
+}
+.downDesDes {
+  margin-left: resize(24);
+  @media (max-width: 768px) {
+    margin-left: 16px;
+  }
+}
+.downValue {
+  color: #202020;
+  font-family: LexendBold;
+  font-size: resize(24);
+  font-weight: 700;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+.downValueDis {
+  color: #90949A;
+  font-family: ProductSansMedium;
+  font-size: resize(21);
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+.downValueSpace {
+  margin-left: resize(24);
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
+}
+.downSpaceHeight {
+  margin-top: resize(28);
+  @media (max-width: 768px) {
+    margin-top: 16px;
+  }
+}
+.downButton {
+  border-radius: resize(12);
+  background: var(--primary-black, #000);
+  width: resize(240) !important;
+  color: #fff;
+  height: resize(62);
+  font-family: ProductSansMedium;
+  font-size: resize(20);
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  @media (max-width: 1150px) {
+    width: resize(180) !important;
+  };
+  @media (max-width: 1050px) {
+    width: resize(140) !important;
+  };
+  @media (max-width: 768px) {
+    border-radius: 8px;
+    width:130px !important;
+    max-width: 150px;
+    height: 32px;
+    font-size: 14px
+  }
+}
+.downButtonDis {
+  background: var(--gray-bg-4, #E5E5E5) !important;
+  color: #90949A;
+}
+.downButtonSel {
+  background: var(--primary-black, #EF8339);
+  @media (max-width: 768px) {
+    margin-top: 12px;
+  }
+}
+.downButton:hover {
+  border: 1px solid var(--primary-orange, #EF8339);
+  color: #EF8339;
+  background:transparent
+}
+.downButtonDis:hover {
+  border: 1px solid var(--primary-orange, #E5E5E5);
+  background: var(--gray-bg-4, #E5E5E5) !important;
+  color: #90949A;
+}
+.downMore {
+  color: #EF8339;
+  font-family: ProductSansMedium;
+  font-size: resize(18);
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+.downMoreIcon {
+  width: resize(24);
+  height: resize(24);
+  margin-left: resize(12);
+  margin-top: resize(-5);
+  @media (max-width: 768px) {
+    width: 16px;
+    height: 16px;
+    margin-left: 6px;
+    margin-top: -2px;
+  }
+}
+.rightImg {
+  margin-left: resize(8);
+  width: resize(24);
+  height: resize(24);
+  @media (max-width: 768px) {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+  }
+}

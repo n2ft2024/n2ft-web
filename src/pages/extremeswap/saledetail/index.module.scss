@@ -1,0 +1,120 @@
+@import 'src/Common/common.scss';
+
+.title {
+    margin-top: resize(49);
+}
+
+.cont {
+    margin-top: resize(36);
+
+    :global {
+        .ant-table-thead>tr>th {
+            background: #F4F7F9 !important;
+            border-bottom: none;
+        }
+
+        .ant-table-thead .ant-table-cell {
+            background: #F4F7F9 !important;
+            border-bottom: none !important;
+            color: #202020 !important;
+            font-family: ProductSans !important;
+            font-size: resize(18) !important;
+            font-weight: 400 !important;
+        }
+
+        .ant-table-thead>tr>th::before {
+            background-color: #F4F7F9 !important;
+            content: '';
+        }
+        .ant-table-thead .ant-table-cell:first-child {
+            border-start-start-radius: resize(12);
+            border-bottom-left-radius: resize(12);
+        }
+
+        .ant-table-thead .ant-table-cell:last-child {
+            border-start-end-radius: resize(12);
+            border-bottom-right-radius: resize(12);
+        }
+        .ant-table-cell-row-hover{
+            background: none !important;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        :global {
+            .ant-table-thead>tr>th {
+                background: #F4F7F9 !important;
+                border-bottom: none;
+            }
+
+            .ant-table-thead .ant-table-cell {
+                background: #F4F7F9 !important;
+                border-bottom: none !important;
+                color: #202020 !important;
+                font-family: ProductSans !important;
+                font-size: 12px !important;
+                font-weight: 400 !important;
+                padding: 13px 9px;
+            }
+
+            .ant-table-thead>tr>th::before {
+                background-color: #F4F7F9 !important;
+                content: '';
+            }
+        }
+    }
+}
+
+.rightIcon {
+    margin-left: resize(6);
+    width: resize(24);
+    height: resize(24);
+    margin-top: resize(3);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (max-width:768px) {
+        width: 16px;
+        height: 16px;
+        display: flex;
+        margin-left:0;
+        margin-top: 0;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.statusfinish {
+    font-size: resize(18);
+    font-weight: 400;
+    font-family: ProductSans;
+    color: #26A17B;
+
+    @media screen and (max-width:768px) {
+        font-size: 12px;
+    }
+
+}
+
+.statuspending {
+    color: #EF8339;
+    font-size: resize(18);
+    font-weight: 400;
+    font-family: ProductSans;
+
+    @media screen and (max-width:768px) {
+        font-size: 12px;
+    }
+}
+
+.action {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+
+}

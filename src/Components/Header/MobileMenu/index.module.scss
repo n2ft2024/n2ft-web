@@ -1,0 +1,150 @@
+.mobilebox {
+    @media screen and (max-width: 768px) {
+        //margin: 20px 20px 32px 20px;
+    }
+
+    ;
+}
+
+.mobilemenu {
+    @media screen and (max-width: 768px) {
+        padding-bottom: 32px;
+        border-bottom: 1px solid #EEEEEE;
+    }
+}
+.elebox{
+    @media screen and (max-width: 768px) {
+        margin-top: 36px;
+    }
+}
+.mobilenavItem {
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.mobilemenuItem {
+    @media screen and (max-width: 768px) {
+        padding-left: 34px;
+    }
+}
+
+.mobilenavtext {
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+        color: #000000;
+        font-weight: 900;
+        margin-top: 36px;
+        font-family: ProductSansBlack;
+
+    }
+}
+
+.mobilenavname {
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+        color: #000000;
+        font-weight: 900;
+        margin-top: 36px;
+        font-family: ProductSansBlack;
+        display: flex;
+        align-items: center;
+
+    }
+}
+
+.routerIcon {
+    @media screen and (max-width: 768px) {
+        width: 16px;
+        height: 16px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.mobilename {
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+        color: #000000;
+        font-weight: 900;
+        font-family: ProductSansBlack;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.language {
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+    }
+}
+
+.langtext {
+    @media screen and (max-width: 768px) {
+        font-family: ProductSansMedium;
+        font-size: 16px;
+        color: #000000;
+        font-weight: 500;
+    }
+}
+
+.lngright {
+    display: flex;
+}
+
+.rightImg {
+    @media screen and (max-width: 768px) {
+        width: 16px;
+        height: 16px;
+        display: flex;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.curreylng {
+    @media screen and (max-width: 768px) {
+        font-family: ProductSansMedium;
+        font-size: 16px;
+        color: #EF8339;
+        font-weight: 500;
+        margin-right: 12px;
+    }
+}
+
+.mobileconnect {
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #EF8339;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: ProductSansMedium;
+        margin-top: 84px;
+        padding: 9px 61px 9px 59px;
+        border-radius: 8px;
+
+    }
+}
+
+.lanRowView {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 20px;
+    height: 30px;
+    align-items: center;
+}

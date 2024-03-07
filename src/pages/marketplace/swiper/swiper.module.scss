@@ -1,0 +1,44 @@
+@import 'src/Common/common.scss';
+.swiperbox{
+    margin-top: 104px;
+    height: resize(400);
+    border-radius: resize(8);
+    position: relative;
+}
+
+
+.cont{
+    position: absolute;
+    top: resize(94);
+    left: resize(132);
+    color: #FFFFFF;
+    z-index: 9;
+}
+.exploratory{
+    font-size: resize(64);
+    font-weight: 900;
+    font-family: ProductSansBlack;
+    color: #FFFFFF;
+}
+.describe{
+    margin-top: resize(8);
+    font-size: resize(24);
+    font-family:ProductSans;
+    font-weight: 400;
+    color: #EF8339;
+}
+.buy{
+    margin-top: resize(36);
+    padding: resize(16) resize(61);
+    font-size: resize(20);
+    font-family: ProductSansMedium;
+    font-weight: 500;
+    border-radius: resize(12);
+    background: #EF8339;
+    width: resize(240);
+    height: resize(62);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

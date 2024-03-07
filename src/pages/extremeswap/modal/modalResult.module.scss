@@ -1,0 +1,114 @@
+@import "/src/Common/common.scss";
+
+.resultModal {
+  width: resize(552);
+  // max-height: 70%;
+  padding: resize(36);
+  border-radius: resize(24);
+  background: #fff;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 16px 16px 24px;
+    border-radius: 16px 16px 0 0;
+    height: 500px;
+  }
+
+  .titleRow {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    h3 {
+      color: #202020;
+      font-family: ProductSansMedium;
+      font-size: resize(24);
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
+    .cancelBtn {
+      width: resize(24);
+      height: resize(24);
+      cursor: pointer;
+      @media (max-width: 768px) {
+        width: 20px;
+      }
+    }
+  }
+  .divideLine {
+    margin-top: 24px;
+    width: 100%;
+    height: 1px;
+    background: #f4f7f9;
+  }
+  .resWrap {
+    @media (max-height: 900px) and (min-width: 768px) {
+      flex: 1;
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+    }
+    .result {
+      margin: resize(48) 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media (max-width: 768px) {
+        margin: 24px 0;
+      }
+      .words {
+        color: #000;
+        font-family: ProductSansMedium;
+        font-size: resize(24);
+        text-transform: capitalize;
+        @media (max-width: 768px) {
+          font-size: 18px;
+        }
+      }
+      .fail {
+        color: #e33d3d;
+      }
+      .tip {
+        margin-top: resize(16);
+        color: #90949a;
+        font-family: ProductSans;
+        font-size: resize(18);
+        line-height: 2.5;
+        @media (max-width: 768px) {
+          margin-top: 8px;
+          font-size: 14px;
+        }
+      }
+      img {
+        margin-top: resize(36);
+        width: resize(300);
+        @media (max-width: 768px) {
+          margin-top: resize(24);
+          width: 200px;
+        }
+      }
+    }
+    .okBtn {
+      margin-top: resize(48);
+      width: 100%;
+      height: resize(62);
+      border-radius: resize(12);
+      background: #ef8339;
+      text-align: center;
+      font-size: resize(20);
+      line-height: resize(62);
+      color: #fff;
+      cursor: pointer;
+      @media (max-width: 768px) {
+        margin-top: 24px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 16px;
+        border-radius: 8px;
+      }
+    }
+  }
+}

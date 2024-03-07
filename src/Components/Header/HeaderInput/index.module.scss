@@ -1,0 +1,105 @@
+@import 'src/Common/common.scss';
+
+@keyframes heightAnimation {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: resize(612);
+    }
+}
+
+.input {
+    height: 44px;
+    background: #F4F7F9;
+    border: none;
+    outline: none;
+    width: resize(520);
+    border: 1px solid #EF8339;
+    padding: resize(12) resize(20) resize(12) resize(62);
+    :global{
+        .ant-input:focus{
+            border: 1px solid #EF8339;
+            box-shadow: none;
+        }
+        
+        .ant-input:hover{
+            border: 1px solid #EF8339 !important;
+            box-shadow: none;
+        }
+        
+    }
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1070px) and (max-width:1300px) {
+        width: resize(260);
+    padding: resize(12) resize(16) resize(12) resize(42);
+
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1070px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1300px) {
+        width: resize(430);
+    }
+}
+
+.headerInput {
+    margin-left: 2%;
+    position: relative;
+}
+
+.search {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: resize(20);
+    height: resize(20);
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1070px) {
+        display: none;
+    }
+    @media screen and (min-width: 1070px) and (max-width: 1300px) {
+        position: absolute;
+        top: 12px;
+        left: 10px;
+        width: resize(20);
+        height: resize(20);
+    }
+}
+
+.searchBox {
+    width: resize(520);
+    border: 1px solid #EF8339;
+    height: 0;
+    padding: resize(24) 0;
+    background: #FFFFFF;
+    margin-top: resize(8);
+    animation: heightAnimation 2s ease-in-out forwards;
+    border-radius: resize(8);
+    z-index: 999;
+    position: absolute;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1300px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1300px) {
+        width: resize(430);
+    }
+}

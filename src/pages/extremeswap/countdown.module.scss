@@ -1,0 +1,136 @@
+@import "src/Common/common";
+
+@function mediaCal($n) {
+  @return calc((100% - resize($colonSize)) / 2 * $n);
+}
+
+$colonSize: 58 * 1800 / 1920;
+$cardWidth: calc((100% - resize($colonSize)) / 2);
+$cardHeight: calc(((100% - resize($colonSize)) / 2) * 1.2);
+
+.card {
+  width: resize(96);
+  height: resize(115);
+  border-radius: 24%;
+  background: #ef8339;
+  text-align: center;
+  line-height: resize(115);
+  color: #fff;
+  font-family: ProductSansBlack;
+  font-size: resize(56);
+
+  @media (max-width: 1500px) {
+    width: resize(85);
+    height: resize(95);
+    line-height: resize(95);
+    font-size: resize(50);
+  }
+
+  @media (max-width: 1300px) {
+    width: resize(70);
+    height: resize(75);
+    line-height: resize(75);
+    font-size: resize(40);
+  }
+  @media (max-width: 1100px) {
+    width: resize(56);
+    height: resize(60);
+    line-height: resize(60);
+    font-size: resize(30);
+  }
+  @media (max-width: 900px) {
+    width: resize(45);
+    height: resize(50);
+    line-height: resize(50);
+    font-size: resize(26);
+  }
+  @media (max-width: 768px) {
+    // width: 13%;
+    // width: calc((100% - 4px) / 2);
+    height: 48px;
+    width: 40px;
+    line-height: 48px;
+    border-radius: 16%;
+  }
+}
+
+.completed {
+  background: #f4f7f9;
+  color: #000;
+}
+
+.card + .card {
+  margin-left: resize(10);
+
+  @media (max-width: 1500px) {
+    margin-left: resize(8);
+  }
+  @media (max-width: 1300px) {
+    margin-left: resize(6);
+  }
+  @media (max-width: 1100px) {
+    margin-left: resize(4);
+  }
+  @media (max-width: 768px) {
+    margin-left: 4px;
+  }
+}
+
+.split {
+  margin: 0 resize(10);
+  color: #000;
+  font-family: ProductSansBlack;
+  font-size: resize(58);
+
+  @media (max-width: 1500px) {
+    font-size: resize(50);
+    margin: 0 resize(8);
+  }
+
+  @media (max-width: 1300px) {
+    font-size: resize(42);
+    margin: resize(6);
+  }
+
+  @media (max-width: 1100px) {
+    font-size: resize(38);
+    margin: resize(4);
+  }
+
+  @media (max-width: 900px) {
+    font-size: resize(32);
+    margin: resize(2);
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+    width: 24px;
+    // height: 24px;
+    text-align: center;
+    font-size: 32px;
+    margin: 0 4px;
+  }
+}
+
+.cardWords {
+  height: $cardHeight;
+  text-align: center;
+  line-height: $cardHeight;
+  font-family: ProductSansBlack;
+  font-size: resize(56);
+}
+.signalCard {
+  // flex: 1;
+  width: $cardWidth;
+  // padding: 0 resize(24);
+  border-radius: 10%;
+  background: #ef8339;
+  color: #fff;
+}
+.signalCard + .signalCard {
+  margin-left: resize(10);
+}
+.colon {
+  width: resize($colonSize);
+  color: #000;
+}

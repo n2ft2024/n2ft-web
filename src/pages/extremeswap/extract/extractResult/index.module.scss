@@ -1,0 +1,137 @@
+@import 'src/Common/common.scss';
+
+.bg {
+    background: #fff;
+    padding: resize(36);
+    width: resize(552);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: resize(24);
+
+    @media screen and (max-width:768px) {
+        width: 100%;
+        padding: 24px 16px;
+        border-radius: 16px 16px 0px 0px;
+        margin: 0 15px;
+    }
+}
+
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    margin: resize(36) 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    @media screen and (max-width:768px) {
+
+        margin-top: 24px;
+    }
+
+}
+
+.resulttitle {
+    color: #E33D3D;
+    font-size: resize(24);
+    font-weight: 500;
+    font-family: ProductSansMedium;
+
+    @media screen and (max-width:768px) {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.resultdesc {
+    margin-top: resize(16);
+    color: #90949A;
+    font-size: resize(18);
+    font-weight: 400;
+    font-family: ProductSans;
+
+    @media screen and (max-width:768px) {
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+.payImg {
+    width: resize(233);
+    height: resize(233);
+    margin: resize(36) 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (max-width:768px) {
+        width: 143px;
+        height: 138px;
+        margin: 24px 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.confirm {
+    width: 100%;
+    background: #EF8339;
+    border-radius: resize(12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: resize(16) resize(81);
+    color: #FFFFFF;
+    font-size: resize(20);
+    font-weight: 500;
+    line-height: resize(30);
+    font-family: ProductSansBlack;
+    cursor: pointer;
+    @media screen and (max-width:768px) {
+        font-size: 16px;
+        font-weight: 900;
+    }
+}
+
+
+.title {
+    color: #202020;
+    font-family: ProductSansMedium;
+    font-size: resize(24);
+    font-weight: 500;
+
+    @media screen and (max-width:768px) {
+        font-size: 20px;
+        font-weight: 400;
+
+    }
+}
+.close {
+    width: resize(28);
+    height: resize(28);
+    position: relative;
+    cursor: pointer;
+    top: -5px;
+    right: 1px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (max-width:768px) {
+        width: 20px;
+        height: 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

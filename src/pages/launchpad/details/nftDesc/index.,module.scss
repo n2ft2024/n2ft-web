@@ -1,0 +1,41 @@
+@import "/src/Common/common.scss";
+
+.tabLine {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.tab {
+  color: #90949a;
+  font-size: resize(20);
+  line-height: resize(48);
+  font-family: ProductSansRegular;
+  position: relative;
+  height: 48px;
+  box-sizing: border-box;
+  transition: 0.1s all;
+  cursor: pointer;
+}
+
+.active {
+  font-family: ProductSansBlack;
+  color: #000;
+  border-bottom: 3px solid #ef8339;
+}
+
+.tab + .tab {
+  margin-left: resize(48);
+}
+
+.boxContents {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.boxContent {
+  border-radius: resize(16);
+  border: 1.5px solid #e5e5e5;
+  background: #fff;
+}

@@ -1,0 +1,93 @@
+@import 'src/Common/common';
+
+.topView {
+  width: 100%;
+  margin-top: $header_height;
+  @media screen and (max-width: 768px) {
+    margin-top: $header_height_mobile;
+  };
+}
+.leftView {
+  flex:2.3
+}
+.rightView {
+  flex:1;
+  margin-left: resize(12);
+}
+.topLeftView {
+  border-radius: resize(10);
+  background: #303030;
+  height: resize(110);
+  padding-left: resize(34);
+  flex: 6;
+}
+.coinTitle {
+  color: #fff;
+  font-family: OpenSansMedium;
+  font-size: resize(32);
+  cursor: pointer;
+}
+.arrowicon {
+  width: resize(13);
+  height: resize(6);
+  margin-left: resize(16);
+}
+.topLineV {
+  background-color: #757575;
+  height: resize(54);
+  width: 1px;
+  margin: 0 resize(37);
+}
+.coinPrice {
+  color: #fff;
+  font-family: OpenSansSemiBold;
+  font-size: resize(20);
+}
+.coinPriceSpace {
+  width: resize(63);
+}
+.coinPriceDes {
+  color: #9698A3;
+  font-family: OpenSansSemiBold;
+  font-size: resize(16);
+  margin-top: resize(8);
+}
+.coinPriceadd {
+  color: #279B3A;
+  font-family: OpenSansSemiBold;
+  font-size: resize(20);
+}
+.toprightView {
+  border-radius: resize(10);
+  background: #303030;
+  height: resize(110);
+  flex:1;
+  margin-left: resize(14);
+}
+.toprightViewV {
+  background: #202020;
+  width: resize(60) !important;
+  height: resize(60);
+  color: #FFF;
+  font-family: OpenSansSemiBold;
+  font-size: resize(20);
+  cursor: pointer;
+}
+.toprightViewVSel {
+  color: #000;
+  background: #FBDAA4;
+}
+
+
+
+
+
+
+
+
+.rightTopView {
+  border-radius: resize(10);
+  background: #303030;
+  padding: resize(18);
+  width: 100%;
+}

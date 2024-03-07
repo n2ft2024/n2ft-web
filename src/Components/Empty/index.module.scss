@@ -1,0 +1,9 @@
+@import 'src/Common/common';
+.container {
+  .content {
+    margin: resize(30) auto;
+    width: resize(100);
+    height: resize(100);
+    border: 1px solid #efefef;
+  }
+}

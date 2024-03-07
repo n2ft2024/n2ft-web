@@ -1,0 +1,339 @@
+@import 'src/Common/common.scss';
+
+
+.mincont {
+    width: 100%;
+    padding: resize(24) ;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    @media screen and (max-width: 768px) {
+        padding: $header_height 18px;
+    }
+}
+
+.presalemobile {
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+// .title {
+//     color: #202020;
+//     font-weight: 900;
+//     font-family: ProductSansBlack;
+    
+//     @media screen and (max-width: 768px) {
+//         font-size: 16px;
+//     }
+// }
+.salecont {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.saleItems {
+    position: absolute;
+    top: -37%;
+    left: 7%;
+    display: flex;
+    cursor: pointer;
+
+    @media screen and (min-width: 910px) and (max-width:1300px) {
+        left: 5%;
+    }
+    @media screen and (min-width: 768px) and (max-width:910px) {
+        left: 1%;
+    }
+}
+
+
+
+.saleItem {
+    border:  1.5px solid var(--Gray-bg3, #F4F7F9);
+    border-radius: resize(24);
+    padding: resize(24);
+    @media screen and (max-width: 768px) {
+        border: 1px solid #F4F7F9;
+        border-radius: 16px;
+        padding: 16px;
+        display: flex;
+        margin-top: 12px;
+        width: 100%;
+        position: relative;
+        right: 0;
+        left: 0;
+    }
+
+    @media screen and (min-width: 768px) and (max-width:1300px) {
+        right: resize(40);
+        padding: 30px;
+    }
+
+}
+.sasaleItem_into{
+display: flex;
+
+}
+
+.saleImg {
+    width: resize(90);
+    height: resize(131);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        width: 120px;
+        height: 174px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.salecontent {
+    // flex: 1;
+    margin-left: resize(22.5);
+
+    @media screen and (max-width: 768px) {
+        margin-left: 19px;
+        flex: 1;
+    }
+}
+
+.price {
+    display: flex;
+    margin-top: resize(18);
+    padding-bottom: resize(12);
+
+    @media screen and (max-width: 768px) {
+        margin-top: 0;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.saletitle {
+    font-family: ProductSansBlack;
+    font-size: resize(30);
+    font-weight: 900;
+    color: #000000;
+
+    @media screen and (max-width: 768px) {
+        font-family: ProductSansBlack;
+        font-size: 20px;
+        font-weight: 900;
+    }
+    @media screen and (min-width: 768px) and (max-width:1300px) {
+    font-size: resize(26);
+
+    }
+}
+
+.pre {
+    display: flex;
+    // margin-top: 21px;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 12px;
+    }
+}
+
+.presalePrice {
+    font-size: resize(18);
+    font-weight: 400;
+    font-family: ProductSans;
+    color: #3F3E3D;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+.presalevalue {
+    color: #FF7C1A;
+    font-weight: 900;
+    font-size: resize(27);
+    font-family: ProductSansBlack;
+    display: flex;
+    align-items: center;
+    margin-left: resize(9);
+
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+        margin-left: 6px;
+    }
+}
+
+.origin {
+    // margin-top: resize(12);
+    // padding-bottom: resize(16);
+    display: flex;
+    margin-left: resize(40);
+
+    @media screen and (max-width: 768px) {
+        margin-top: 9px;
+        padding-bottom: 12px;
+        margin-left: 0
+    }
+
+}
+
+.originalprice {
+    color: #3F3E3D;
+    font-weight: 400;
+    font-size: resize(18);
+    font-family: ProductSans;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        font-weight: 400;
+        font-size: 12px;
+    }
+}
+
+.originvalue {
+    color: #90949A;
+    font-weight: 500;
+    font-size: resize(21);
+    font-family: ProductSansMedium;
+    display: flex;
+    align-items: center;
+    margin-left: resize(10.5);
+    text-decoration: line-through;
+
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+        margin-left: 6px;
+    }
+}
+
+.salefooter {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+        padding-top: 12px;
+
+    }
+}
+
+.saleicon {
+    width: resize(24);
+    height: resize(24);
+    display: flex;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 16px;
+        height: 16px;
+        display: flex;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.integral {
+    margin-left: resize(15);
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+        margin-left: 10px;
+
+
+    }
+}
+
+.integraltitle {
+    color: #90949A;
+    font-weight: 400;
+    font-size: resize(15);
+    font-family: ProductSans;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+        font-size: 10px;
+    }
+}
+
+.integralvalue {
+    color: #000000;
+    font-weight: 700;
+    font-size: (18);
+    font-family: ProductSans;
+
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+.buy {
+    margin-top: resize(36);
+    background: #000000;
+    color: #FFFFFF;
+    padding: resize(20) resize(14);
+    display: flex;
+    font-weight: 900;
+    font-size: resize(21);
+    font-family: ProductSansBlack;
+    border-radius: resize(12);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    @media screen and (min-width: 768px) and (max-width:1200px) {
+        padding: 16px 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        margin-top: 12px;
+        padding: 16px 35px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
+
+}
+.pc_buy{
+    margin-top: resize(36);
+    background: #000000;
+    color: #FFFFFF;
+    padding: resize(20) resize(14);
+    display: flex;
+    font-weight: 900;
+    font-size: resize(21);
+    font-family: ProductSansBlack;
+    border-radius: resize(12);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) and (max-width:1200px) {
+        padding: 16px 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        display: none;
+        margin-top: 12px;
+        padding: 16px 35px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
+}

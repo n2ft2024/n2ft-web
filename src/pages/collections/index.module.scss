@@ -1,0 +1,210 @@
+@import '../../Common/common.scss';
+
+.collections {
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.collectionstitle {
+    color: #202020;
+    font-size: resize(64);
+    font-weight: 900;
+    font-family: ProductSansBlack;
+
+    @media (min-width: 462px) and (max-width:1300px) {
+        font-size: resize(54);
+    }
+
+    @media screen and (max-width: 462px) {
+        font-size: 28px;
+    }
+
+}
+
+.collectionsdescribe {
+    margin-top: resize(12);
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.collectiondescribeforward {
+    color: #90949A;
+    font-size: resize(21);
+    font-weight: 400;
+    font-family: ProductSans;
+    margin-right: resize(2);
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+.collectiondescribecont {
+    color: #EF8339;
+    font-size: resize(21);
+    font-weight: 400;
+    font-family: ProductSans;
+
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+.collectiondescribeback {
+    color: #90949A;
+    font-size: resize(21);
+    font-weight: 400;
+    font-family: ProductSans;
+    margin-left: resize(2);
+
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+.brief {
+    display: none;
+    @media screen and (max-width: 768px) {
+        display: flex;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-top: 24px;
+        cursor: pointer;
+    }
+}
+.briefItem{
+    @media screen and (max-width: 768px) {
+        width:152px;
+        height: 104px;
+        margin-right: 12px;
+        position: relative;
+    }
+}
+.briefimg {
+    @media screen and (max-width: 768px) {
+        width:152px;
+        height: auto;
+        img{
+            width: 100%;
+            height: 100%;
+        border-radius: 8px;
+
+        }
+    }
+}
+.brieficon{
+    @media screen and (max-width: 768px) {
+      width: 44px;
+      height: 44px;
+      border: 1px solid #FFFFFF;
+      opacity: 1;
+      border-radius: 44px;
+      position: absolute;
+      top: 13px;
+      left: 14px;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 44px;
+        }
+    } 
+}
+.briefname{
+    @media screen and (max-width: 768px) {
+        position: absolute;
+        bottom: 16px;
+        left: 14px;
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: 500;
+        font-family: ProductSansMedium;
+      }  
+}
+
+
+.tab {
+    margin-top: resize(48);
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        overflow: auto;
+        white-space: nowrap;
+        display: flex;
+        padding: 10px 0;
+        margin-top: 24px;
+
+    }
+}
+
+.tabnav {
+    color: #000000;
+    font-size: resize(18);
+    font-weight: 500;
+    font-family: ProductSansMedium;
+    padding: resize(8) resize(20);
+    cursor: pointer;
+
+    @media (min-width: 462px) and (max-width:1300px) {
+        padding: resize(8) resize(32);
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 4px 24px;
+        font-size: 16px;
+    }
+}
+
+.tabnav:not(:first-child) {
+    margin-left: resize(36);
+
+    @media (min-width:462px) and (max-width:1300px) {
+        margin-left: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+    }
+}
+
+.active {
+    background: #EF8339;
+    color: #FFFFFF;
+    border-radius: resize(8);
+}
+
+.collectioncontent {
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: resize(24);
+
+    @media (min-width: 1440px) {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    @media (min-width: 992px) and (max-width: 1439.9px) {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    @media (min-width:462px) and (max-width: 991.9px) {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    @media screen and (max-width: 462px) {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 24px;
+    }
+}
+
+.nodefooter {
+    display: flex;
+}

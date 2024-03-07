@@ -1,0 +1,59 @@
+@import 'src/Common/common.scss';
+
+.ant-input{
+    background:none;
+}
+.anticon-close-circle{
+    width: resize(24);
+    height: resize(24);
+    background:#FFFFFF;
+    border-radius: 50%;
+    color: #EF8339;
+}
+.ant-input-affix-wrapper .ant-input:focus{
+    border: none !important;
+    box-shadow: none;
+}
+
+
+.ant-input-affix-wrapper:hover{
+    border: none !important;
+    box-shadow: none;
+}
+// .ant-input-affix-wrapper .ant-input:focus{
+//     border: none;
+//     box-shadow: none;
+// }
+// .ant-input-affix-wrapper .ant-input:hover{
+//     border: none;
+//     box-shadow: none;
+// }
+
+.ant-space-compact .ant-input{
+    border: 1px solid #E5E5E5 !important;
+    height: resize(65);
+    background: none;
+}
+
+.ant-space-compact .ant-input-group-addon{
+    border: 1px solid #E5E5E5;
+    background: none;
+
+}
+.email .ant-input{
+    background: none !important;
+    border: 1px solid #E5E5E5 !important;
+
+}
+
+.email .ant-input:focus-visible{
+    border: 1px solid #E5E5E5 !important;
+}
+
+.ant-input:focus{
+    background: none !important;
+    border: 1px solid #E5E5E5 !important;
+
+}
+
+

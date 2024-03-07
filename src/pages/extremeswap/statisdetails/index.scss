@@ -1,0 +1,98 @@
+.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+    border: 1px solid #EF8339 !important;
+
+}
+
+:where(.css-dev-only-do-not-override-3mqfnx).ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner,
+:where(.css-dev-only-do-not-override-3mqfnx).ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+:where(.css-dev-only-do-not-override-3mqfnx).ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+    background: #EF8339;
+}
+
+.ant-btn-primary {
+    background: #EF8339;
+
+}
+
+.ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
+    background-color: #EF8339 !important;
+
+}
+
+.ant-picker-range-wrapper {
+    @media screen and (max-width:768px) {
+        max-width: 300px;
+
+    }
+
+}
+
+.ant-picker-dropdown .ant-picker-panel-container .ant-picker-panel-layout {
+    @media screen and (max-width:768px) {
+        flex-wrap: wrap;
+
+    }
+}
+
+.ant-picker-presets {
+    height: 170px;
+}
+
+.ant-picker-presets ul {
+    border-inline-end: none !important;
+}
+
+.ant-picker-time-panel {
+    border-inline-start: none !important;
+
+}
+
+.ant-picker-time-panel {
+    display: none !important;
+}
+
+.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover::before {
+    background: none !important;
+}
+
+.ant-picker-cell-in-range::before {
+    background: none !important;
+
+}
+
+.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single)::before {
+    background: none !important;
+
+}
+.ant-picker-presets ul li  {
+    font-weight: 900;
+    font-family: ProductSansBlack;
+    color: #171717;
+    font-size: resize(20);
+
+    @media screen and (max-width:768px) {
+        font-size: 14px;
+
+    }
+
+}
+
+.ant-picker-dropdown .ant-picker-panel-container .ant-picker-presets ul li:hover{
+    background-color: #EF8339;
+
+}
+
+.your-legend-class .your-legend-item .g2-legend-marker {
+    display: none !important;
+}
+
+.g2-legend-item {
+    background-color: #EF8339;
+    font-size: 16px;
+    /* 其他样式属性 */
+  }
+  
+  .antv-legend-item-marker {
+    display: none;
+    color: #FFFFFF;
+  }

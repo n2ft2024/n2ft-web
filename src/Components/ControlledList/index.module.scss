@@ -1,0 +1,81 @@
+@import '../../Common/common.scss';
+
+.check {
+    border: 1px solid #90949A;
+    padding: resize(12);
+    display: flex;
+    border-radius: resize(8);
+    margin-left: resize(16);
+}
+
+.checkIcon {
+    width: resize(20);
+    height: resize(20);
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.checkborder {
+    margin: resize(2) resize(10);
+    height: resize(16);
+    border: 0.5px solid #E3E3E3;
+}
+
+.contracttop {
+    display: flex;
+    margin-top: resize(48);
+}
+
+.grild {
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: resize(24);
+    @media (max-width: 1400px) {
+        .col-xl-6 {
+            grid-column: span 5;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .col-lg-5 {
+            grid-column: span 4;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .col-md-4 {
+            grid-column: span 3;
+        }
+    }
+}
+
+.cont {
+    margin-top: resize(24);
+    flex: 1;
+}
+
+.total {
+    display: flex;
+}
+
+.totalValue {
+    font-size: resize(20);
+    font-weight: 500;
+    font-family: ProductSansMedium;
+    color: #EF8339;
+}
+
+.totalabel {
+    font-size: resize(20);
+    font-weight: 500;
+    font-family: ProductSansMedium;
+    color: #000000;
+}
+.contab{
+    margin-top: resize(24);
+}

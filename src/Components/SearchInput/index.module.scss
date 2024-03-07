@@ -1,0 +1,38 @@
+@import '../../Common/common.scss';
+
+
+.input {
+    height: 44px;
+    background: #F4F7F9;
+    border: none;
+    outline: none;
+    border: 1px solid #EF8339;
+}
+
+.searchInput {
+    margin-left: 2%;
+    position: relative;
+    width:80%;
+    :global{
+        .ant-input{
+            padding-left: 6%;
+        }
+    }
+
+}
+
+.search {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: resize(20);
+    height: resize(20);
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1300px) {
+        display: none;
+    }
+}

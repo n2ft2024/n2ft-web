@@ -1,0 +1,506 @@
+@import 'src/Common/common.scss';
+
+.extract_title {
+    color: #000000;
+    font-size: resize(28);
+    font-weight: 500;
+    font-family: ProductSansMedium;
+}
+
+.timer {
+    display: flex
+}
+
+.timerImg {
+    width: resize(18);
+    height: resize(18);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.collect {
+    display: flex;
+
+}
+
+.collectImg {
+    width: resize(64);
+    height: resize(64);
+    border-radius: resize(8);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+  border-radius: resize(8);
+
+}
+
+.infocolum {
+    display: flex;
+    flex-direction: column;
+    margin-left: resize(12);
+    justify-content: space-evenly;
+}
+
+.infoname {
+    font-size: resize(16);
+    font-weight: 400;
+    color: #3F3E3D;
+    font-family: ProductSans;
+}
+
+.infonumber {
+    font-size: resize(20);
+    font-weight: 500;
+    color: #000000;
+    font-family: ProductSansMedium;
+}
+
+.preprie {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricetop {
+    display: flex;
+}
+
+.priceIcon {
+    width: resize(24);
+    height: resize(24);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.prievalue {
+    color: #202020;
+    font-weight: 500;
+    font-size: resize(20);
+    font-family: ProductSansMedium;
+
+}
+
+.priebot {
+    font-weight: 400;
+    font-size: resize(18);
+    font-family: ProductSansMedium;
+    color: #90949A
+}
+
+.number {
+    display: flex
+}
+
+.numberImg {
+    width: resize(18);
+    height: resize(18);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.numbervalue {
+    margin-left: resize(6);
+    font-weight: 400;
+    font-size: resize(18);
+    font-family: ProductSans;
+    color: #000000;
+}
+
+.timervalue {
+    margin-left: resize(6);
+    font-weight: 400;
+    font-size: resize(18);
+    font-family: ProductSans;
+    color: #000000;
+}
+
+.extract_table {
+    margin-top: resize(36);
+
+    :global {
+        .ant-tabs-nav::before {
+            border: none !important;
+        }
+
+        .ant-tabs-tab:hover {
+            color: none;
+        }
+
+        .ant-tabs-tab-btn {
+            color: #90949A;
+        }
+
+        .ant-tabs-tab-active .ant-tabs-tab-btn {
+            color: #000000 !important;
+
+        }
+
+        .ant-tabs-ink-bar {
+            background: #EF8339 !important;
+
+        }
+
+        .ant-table-tbody>tr>td {
+            border-bottom: none !important;
+        }
+
+        .ant-table-thead>tr>th {
+            background: none !important;
+
+        }
+
+        .ant-table-cell::before {
+            background: none;
+        }
+
+        .ant-checkbox-inner {
+            border-color: #90949A;
+        }
+
+        .ant-table-row-selected>.ant-table-cell {
+            background: none !important;
+        }
+
+        .ant-checkbox-indeterminate .ant-checkbox-inner:after {
+            background-color: #EF8339 !important;
+            border: 1px solid #EF8339 !important;
+        }
+
+        .ant-checkbox-indeterminate .ant-checkbox-inner {
+            border-color: #EF8339 !important;
+            border: 1px solid #EF8339 !important;
+        }
+
+        .ant-checkbox-wrapper:hover .ant-checkbox-checked:not(.ant-checkbox-disabled) .ant-checkbox-inner {
+            border-color: #EF8339 !important;
+            background-color: #EF8339;
+            border: 1px solid #EF8339 !important;
+        }
+
+        .ant-checkbox-checked .ant-checkbox-inner {
+            border-color: #EF8339 !important;
+            background-color: #EF8339;
+            border: 1px solid #EF8339 !important;
+
+        }
+
+        .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+        .ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+            border-color: #EF8339;
+        }
+    }
+}
+
+.extract_footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.06);
+    padding: resize(32) resize(36);
+
+    @media screen and (max-width:768px) {
+        padding: 25px 20px;
+    }
+}
+
+.extract_btn {
+    border-radius: resize(12);
+    padding: resize(16) resize(131);
+    font-size: resize(20);
+    font-weight: 500;
+    cursor: pointer;
+
+    @media screen and (max-width:768px) {
+        font-size: 16px;
+    }
+}
+
+.mobileAll{
+    @media screen and (max-width:768px) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+    }
+}
+
+.mobilerow{
+    @media screen and (max-width:768px) {
+        color: #000000;
+        font-weight: 900;
+        font-family: ProductSansBlack;
+        font-size: 16px;
+    }
+}
+.mbileallcheck{
+    @media screen and (max-width:768px) {
+        display: flex;
+        margin-right: 5px;
+    :global {
+        .ant-checkbox-inner {
+            border-color: #EF8339;
+        }
+
+        .ant-checkbox-inner {
+            border-color: #90949A;
+            border-radius: 50%;
+        }
+
+        .ant-checkbox-wrapper:hover .ant-checkbox-checked:not(.ant-checkbox-disabled) .ant-checkbox-inner {
+            border-color: #EF8339;
+            background-color: #EF8339;
+        }
+
+        .ant-checkbox-checked .ant-checkbox-inner {
+            border-color: #EF8339;
+            background-color: #EF8339;
+        }
+
+        .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+        .ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+            border-color: #EF8339;
+        }
+    }
+
+}
+}
+.mbileallchecktext{
+    @media screen and (max-width:768px) {
+    margin-right: 8px;
+    color:#9E9C9B;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: ProductSansMedium;
+}
+}
+
+.mobileresale {
+    @media screen and (max-width:768px) {
+        display: flex;
+        margin-top: 16px;
+
+    }
+}
+
+.mobileresaledetail {
+    @media screen and (max-width:768px) {
+
+        display: flex;
+
+    }
+}
+
+.mobiledetailImg {
+    @media screen and (max-width:768px) {
+        width: 44px;
+        height: 44px;
+        display: flex;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+
+        }
+    }
+
+}
+
+.mobledetailinfo {
+    @media screen and (max-width:768px) {
+        flex: 1;
+
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+    }
+}
+
+.mobledetailinfo_top {
+    @media screen and (max-width:768px) {
+        color: #3F3E3D;
+        font-family: ProductSans;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+}
+
+.mobledetailinfo_bot {
+    @media screen and (max-width:768px) {
+        margin-top: 6px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #000000;
+        font-family: ProductSansMedium;
+    }
+}
+
+.mobilerepice {
+    @media screen and (max-width:768px) {
+        flex: 1;
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+.mobilerepicetop{
+  
+    @media screen and (max-width:768px) {
+        display: flex;
+        width: 16px;
+        height: 16px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.mobilerepicebot{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: ProductSansMedium;
+    color: #000000;
+}
+.mobileselect {
+    @media screen and (max-width:768px) {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        :global {
+            .ant-checkbox-inner {
+                border-color: #EF8339;
+            }
+
+            .ant-checkbox-inner {
+                border-color: #90949A;
+                border-radius: 50%;
+            }
+
+            .ant-checkbox-wrapper:hover .ant-checkbox-checked:not(.ant-checkbox-disabled) .ant-checkbox-inner {
+                border-color: #EF8339;
+                background-color: #EF8339;
+            }
+
+            .ant-checkbox-checked .ant-checkbox-inner {
+                border-color: #EF8339;
+                background-color: #EF8339;
+            }
+
+            .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+            .ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+                border-color: #EF8339;
+            }
+        }
+    }
+}
+
+.mobileresales {
+    @media screen and (max-width:768px) {
+        position: fixed;
+        background: #FFFFFF;
+
+
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+
+
+.mobileresalecont {
+    @media screen and (max-width:768px) {
+        margin-top: 16px;
+    }
+}
+
+.mobilecontheader {
+    @media screen and (max-width:768px) {
+        display: flex;
+        background: #F4F7F9;
+        padding: 13px 0;
+        border-radius: 8px;
+        width: 100%;
+    }
+}
+
+.mobilecontd {
+    @media screen and (max-width:768px) {
+        font-size: 12px;
+        font-weight: 400;
+        color: #202020;
+        font-family: ProductSans;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.mobilecontd:nth-child(2) {
+    @media screen and (max-width:768px) {
+        justify-content: end;
+    }
+}
+
+.mobilesaleItem {
+    @media screen and (max-width:768px) {
+        display: flex;
+        padding-bottom: 16px;
+        margin-top: 16px;
+        border-bottom: 1px solid #F5F5F5;
+    }
+}
+
+.mobdetail {
+    @media screen and (max-width:768px) {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        flex: 1;
+    }
+}
+
+.mobileresales {
+    @media screen and (max-width:768px) {
+        position: fixed;
+        background: #FFFFFF;
+
+
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.mobileresalesbtn {
+    @media screen and (max-width:768px) {
+        background: #EF8339;
+        color: #FFFFFF;
+        margin: 24px 20px 25px 20px;
+        padding: 12px 60px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

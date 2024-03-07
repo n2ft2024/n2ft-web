@@ -1,0 +1,36 @@
+.ant-input:focus {
+    @media screen and (max-width: 768px) {
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+}
+
+.ant-input:hover {
+    @media screen and (max-width: 768px) {
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+}
+
+.ant-input-affix-wrapper {
+    border: none !important;
+    box-shadow: none !important;
+
+}
+
+.anticon-close-circle {
+    width: 16px;
+    height: 16px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    color: #EF8339;
+}
+
+.ant-input {
+    @media screen and (max-width: 768px) {
+        background: #F4F7F9;
+
+    }
+}

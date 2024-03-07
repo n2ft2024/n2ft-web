@@ -1,0 +1,21 @@
+@import 'src/Common/common';
+.walletIcon {
+  width: resize(24);
+  height: resize(26);
+  margin-right: resize(22);
+}
+.walletView {
+  border-radius: resize(10);
+  border: 1px solid #FBDAA4;
+  height: resize(50);
+  width: fit-content;
+  padding: 0 resize(24);
+  margin:0 resize(28);
+  cursor: pointer;
+}
+.address {
+  // color: $main_color;
+  font-family: ProductSansMedium;
+  font-size: resize(14);
+  white-space: nowrap;
+}

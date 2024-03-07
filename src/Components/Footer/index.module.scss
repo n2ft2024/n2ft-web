@@ -1,0 +1,100 @@
+@import 'src/Common/common.scss';
+
+.footer {
+    background: #FFFFFF;
+}
+
+.footertop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerImg {
+    width: resize(160);
+    height: resize(80);
+    margin: resize(20);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.market {
+    font-size: resize(24);
+    font-weight: 600;
+    font-family: ProductSansBlack;
+    color: #000000;
+    margin: resize(36) 0;
+
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+.iconlist {
+    display: flex;
+}
+
+.icon {
+    width: resize(72);
+    height: resize(72);
+    margin-left: resize(16);
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.divider {
+    height: 1px;
+    background: #E5E5E5;
+    margin: resize(48) 0;
+}
+
+.Introduce {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        align-items: start;
+        justify-content: left;
+        flex-wrap: wrap;
+        margin: 0 31px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1300px) {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        justify-content: start;
+
+    }
+
+}
+
+.roduceItem {
+    font-size: resize(24);
+    color: #FF7C1A;
+    font-weight: 600;
+    margin-left: resize(48);
+    font-family: ProductSansBlack;
+    cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+        margin-right: 16px;
+        line-height: 18px;
+        margin-bottom: 18px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1300px) {
+        margin-top: resize(20);
+    }
+}

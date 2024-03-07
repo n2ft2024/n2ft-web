@@ -1,0 +1,40 @@
+@import 'src/Common/common.scss';
+.main {
+  width: 100%;
+}
+.topView {
+  background: var(--gray-bg-3, #F4F7F9);
+  padding: resize(16) resize(18);
+  @media (max-width: 768px) {
+    padding: 12px;
+  }
+}
+.topTitle {
+  flex: 1;
+  color: #202020;
+  font-family: ProductSansMedium;
+  font-size: resize(21);
+  font-weight: 500;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+.downTitle {
+  flex: 1;
+  color: #000;
+  font-family: ProductSansMedium;
+  font-size: resize(21);
+  font-weight: 400;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+.itemView {
+  height: resize(64);
+  padding: 0 resize(18);
+  border-bottom: 1px solid var(--gray-bg-2, #F5F5F5);
+  @media (max-width: 768px) {
+    height: 50px;
+    padding: 0 12px;
+  }
+}

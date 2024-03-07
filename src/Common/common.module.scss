@@ -1,0 +1,70 @@
+@import 'src/Common/common.scss';
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rowBetween {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.rowCenter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.rowEnd {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.columnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainView {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.mainContent {
+  width: 100%;
+  padding: $header_height resize(36);
+  margin-top: resize(16);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    padding: $header_height 18px;
+  }
+}
+.webView {
+  display: block;
+  @media (max-width: 768px) {
+      display: none;
+  }
+}
+.mobileView {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}

@@ -1,0 +1,278 @@
+@import '../../Common/common.scss';
+
+.btn {
+    display: flex;
+    border: 1px solid #E5E5E5;
+    border-radius: resize(8);
+    padding: resize(8);
+    width: resize(44);
+    height: resize(44);
+}
+
+.iconImg {
+    width: resize(20);
+    height: resize(20);
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// filterbox
+.filterbox {
+    width: resize(285);
+    transition: all 0.5s;
+    overflow: hidden;
+    background: #FFFFFF
+}
+
+
+.select {
+    position: relative;
+    margin-left: resize(16);
+    width: 50%;
+
+    :global {
+        .ant-select-arrow {
+            display: none;
+        }
+
+        .ant-select-selection-item {
+            padding-left: 10% !important;
+        }
+    }
+}
+
+.selectInput {
+    width: 100%;
+    height: resize(46);
+}
+
+.selectImg {
+    position: absolute;
+    top: resize(12);
+    left: resize(12);
+    width: resize(20);
+    height: resize(20);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.sortbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sortImg {
+    width: resize(8);
+    height: resize(8);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.statuslebel {
+    font-size: resize(18);
+    font-weight: 500;
+    color: #202020;
+    font-family: ProductSansMedium;
+}
+
+.statuslist {
+    display: flex;
+    flex-direction: column;
+}
+
+.statustitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    width: resize(16);
+    height: resize(16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+}
+
+.statusbox {
+    display: flex;
+}
+
+.statusbox:not(:first-child) {
+    margin-top: resize(24);
+
+}
+
+.statusname {
+    margin-left: resize(8);
+    font-family: ProductSans;
+    color: #3F3E3D;
+    font-size: resize(16);
+    font-weight: 400;
+}
+
+.priceInput {
+    display: flex;
+}
+
+.to {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #90949A;
+    font-size: resize(14);
+    font-weight: 400;
+    margin: 0 resize(15);
+}
+
+.priceselect {
+    width: 90%;
+    height: resize(46);
+}
+
+
+.priceInput {
+    margin-top: resize(16);
+
+    :global {
+        .ant-input-number {
+            border-color: #E5E5E5;
+        }
+
+        .ant-input-number:focus {
+            box-shadow: none;
+        }
+
+        .ant-input-number:hover {
+            box-shadow: none;
+            border-color: #E5E5E5;
+
+        }
+    }
+}
+
+.apply {
+    padding: resize(16) resize(50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFDCC3;
+    width: 90%;
+    margin-top: resize(16);
+    border-radius: resize(12);
+    font-size: resize(20);
+    font-weight: 500;
+    font-family: ProductSansMedium;
+}
+
+.collectseach {
+    margin: resize(16) 0;
+    position: relative;
+
+    :global {
+        .ant-input {
+            padding: resize(12) 0 resize(12) resize(40);
+        }
+    }
+}
+
+
+.search {
+    position: absolute;
+    top: resize(12);
+    left: resize(12);
+    width: resize(20);
+    height: resize(20);
+
+    img {
+        width: 100%;
+
+        height: 100%;
+    }
+}
+
+.collecItem {
+    margin-top: resize(16);
+    display: flex;
+}
+
+.collectImg {
+    width: resize(64);
+    height: resize(64);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.collectText {
+    display: flex;
+    flex-direction: column;
+    margin-left: resize(8);
+}
+
+.collectName {
+    color: #000000;
+    font-size: resize(20);
+    font-weight: 500;
+    font-family: ProductSansMedium;
+    width: resize(160);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.collectcont {
+    margin-top: resize(6);
+    display: flex;
+}
+
+.cont_left {
+    color: #90949A;
+    font-size: resize(16);
+    font-weight: 400;
+    font-family: ProductSans;
+}
+
+.cont_right {
+    margin-left: resize(5);
+    display: flex;
+}
+
+.con_img {
+    width: resize(16);
+    height: resize(16);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.con_text {
+    color: #90949A;
+    font-size: resize(16);
+    font-weight: 400;
+    font-family: ProductSans;
+}
