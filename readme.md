@@ -1,30 +1,32 @@
-![logo](img/n2ft.jpg)
+# N2FT
 
-# N2FT Introduction
+![image](./img/n2ft.jpg)
+
+## N2FT Introduction
 
 N2FT, a leading NFT Aggregator and NFTFi platform, is poised to redefine the world of Non-Fungible Tokens (NFTs) with its innovative approach to enhancing liquidity and embedded value. With its groundbreaking features and strategic collaborations, N2FT is set to revolutionize the NFT landscape like never before.
 
-# Installation Guide
+## Installation Guide
 
 To install N2FT, follow these steps:
 
 1. Clone the repository:
-    ```
+    ```sh
     git clone https://github.com/n2ft-web.git
     ```
 
 2. Navigate to the project directory:
-    ```
+    ```sh
     cd n2ft-web
     ```
 
 3. Install the dependencies & build the project:
-    ```
+    ```sh
     yarn && yarn typechain:build
     ```
 
 4. Start the application:
-    ```
+    ```sh
     yarn dev
     ```
 
